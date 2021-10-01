@@ -27,6 +27,7 @@ class DomainPriceFactory extends Factory
             'price_usd' => $this->faker->randomFloat(2, 0, 50),
             'cost' => $this->faker->randomFloat(2, 0, 30),
             'main' => $this->faker->boolean,
+            'status' => $this->model::STATUS_ACTIVE,
         ];
     }
 }
