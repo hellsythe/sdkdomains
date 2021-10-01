@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1fc7d9565dd930bd06b0f7db3cb3d741",
+    "content-hash": "26273241f94d67525135d4f333fd16cb",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -976,6 +976,65 @@
                 "source": "https://github.com/guzzle/psr7/tree/2.0.0"
             },
             "time": "2021-06-30T20:03:07+00:00"
+        },
+        {
+            "name": "hellsythe/domainnameapi",
+            "version": "0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hellsythe/domainnameapi.git",
+                "reference": "eb7830d27db9d7aae5fc88ad506be7f45b4e3b05"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hellsythe/domainnameapi/zipball/eb7830d27db9d7aae5fc88ad506be7f45b4e3b05",
+                "reference": "eb7830d27db9d7aae5fc88ad506be7f45b4e3b05",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "^8.40",
+                "php": "^7.4|^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Hellsythe\\DomainNameApi\\ServiceProvider"
+                    ],
+                    "aliases": {
+                        "NameApi": "Hellsythe\\DomainNameApi\\Facade"
+                    }
+                }
+            },
+            "autoload": {
+                "files": [],
+                "psr-4": {
+                    "Hellsythe\\DomainNameApi\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Camilo Antonio Rodríguez Cruz",
+                    "email": "hellsythex@gmail.com",
+                    "homepage": "https://camilo-dev.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Auxiliar para consumir API para revender dominios de domainnameapi.com",
+            "keywords": [
+                "domain reseller",
+                "domainnameapi",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/hellsythe/domainnameapi/issues",
+                "source": "https://github.com/hellsythe/domainnameapi/tree/0.1.1"
+            },
+            "time": "2021-10-01T14:39:06+00:00"
         },
         {
             "name": "hybridauth/hybridauth",
@@ -8449,5 +8508,5 @@
         "php": "^7.3|^8.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }
