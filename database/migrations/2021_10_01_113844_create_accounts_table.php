@@ -17,7 +17,7 @@ class CreateAccountsTable extends Migration
             $table->commonFields();
             $table->string('name');
             $table->integer('type');
-            $table->foreign('account_id')->nullable();
+            $table->foreignId('account_id')->nullable();
             $table->double('balance');
         });
     }

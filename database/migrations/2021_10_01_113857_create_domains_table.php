@@ -20,7 +20,7 @@ class CreateDomainsTable extends Migration
             $table->string('auto_renew');
             $table->double('cost');
             $table->double('sell_cost');
-            $table->foreign('account_id');
+            $table->foreignId('account_id');
         });
     }
 

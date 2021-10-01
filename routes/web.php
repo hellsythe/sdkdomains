@@ -18,8 +18,7 @@ Route::namespace('\App\Http\Controllers')->group(function () {
 });
 
 Route::namespace('\App\Http\Controllers\Admin')
-->prefix('admin')->group(function () { 
-    Route::resource('domains', DomainController::class); 
-    Route::resource('accounts', AccountController::class); 
-    Route::resource('domain-lists', DomainListController::class);
+->prefix('admin')->group(function () {
+    Route::resource('domains', DomainController::class);
+    Route::resource('accounts', AccountController::class);
 });
