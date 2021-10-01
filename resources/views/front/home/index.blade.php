@@ -44,21 +44,15 @@
                 <div class="row">
                     <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 col-12 text-center">
                         <div class="hero-content">
-                            <h1 class="fs-lg mb-20">Find your best domain name and create a Site</h1>
-                            <p>Up to 50% Off Domain and Hosting, Starting from $ 2.50/Month <br>Free SSL Certificate,  Money Back Gurantee.</p>
+                            <h1 class="fs-lg mb-20">@lang('app.find-best-domain')</h1>
+                            <p>@lang('app.find-best-domain-sub')</p>
 
                             <div class="domain-search-box mt-40">
                                 <div class="search-box-inner">
                                     <form action="#">
-                                        <input type="text" placeholder="Find your new domain name">
-                                        <span>
-                                            <select class="domain-list select_design">
-                                            <option value="1">.com</option>
-                                            <option value="1">.net</option>
-                                            <option value="1">.org</option>
-                                        </select>
+                                        <input type="text" placeholder="@lang('app.find-domain')">
                                         </span>
-                                        <button type="submit">search</button>
+                                        <button type="submit">@lang('app.search')</button>
                                     </form>
                                 </div>
                             </div> <!-- /.domain-search-box -->

@@ -9,4 +9,9 @@ return [
         'singular' => 'domain',
         'plural' => 'domain',
     ],
+    'domain-price' => [
+        'singular' => 'domain-price',
+        'plural' => 'domain-price',
+    ],
 ];
+
