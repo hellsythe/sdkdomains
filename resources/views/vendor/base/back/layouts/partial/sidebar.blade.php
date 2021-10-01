@@ -23,6 +23,12 @@
                     'crud' => 'users',
                 ],
                 [
+                    'name' => __('models.domain-price.plural'),
+                    'icon' => Base::icon('at-symbol', ['class' => 'h-6 w-6']),
+                    'url' => 'domain-prices.index',
+                    'crud' => 'domain-prices',
+                ],
+                [
                     'name' => __('base::models.blog.plural'),
                     'icon' => Base::icon('book-open', ['class' => 'h-6 w-6']),
                     'items' => [

@@ -22,7 +22,11 @@ class DomainPriceFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'tld' => $this->faker->tld,
+            'price_mx' => $this->faker->randomFloat(2, 60, 50),
+            'price_usd' => $this->faker->randomFloat(2, 0, 50),
+            'cost' => $this->faker->randomFloat(2, 0, 30),
+            'main' => $this->faker->boolean,
         ];
     }
 }

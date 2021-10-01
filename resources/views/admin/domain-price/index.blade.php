@@ -5,7 +5,10 @@
             'model' => $model,
             'models' => $models,
             'attributes' => [
-
+                'tld',
+                'price_mx',
+                'price_usd',
+                'main',
             ]
         ]) ?>
 @endsection

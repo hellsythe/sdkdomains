@@ -15,6 +15,11 @@ class CreateDomainPricesTable extends Migration
     {
         Schema::create('domain_prices', function (Blueprint $table) {
             $table->commonFields();
+            $table->string('tld');
+            $table->string('price_mx');
+            $table->string('price_usd');
+            $table->string('cost');
+            $table->boolean('main');
         });
     }
 
