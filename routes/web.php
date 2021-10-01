@@ -16,3 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::namespace('\App\Http\Controllers')->group(function () {
     Route::get('/', 'HomeController@index')->name('home');
 });
+
+Route::namespace('\App\Http\Controllers\Admin')
+->prefix('admin')->group(function () { 
+    Route::resource('domains', DomainController::class); 
+    Route::resource('accounts', AccountController::class); 
+    Route::resource('domain-lists', DomainListController::class);
+});
