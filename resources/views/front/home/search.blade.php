@@ -1,13 +1,8 @@
 @extends('front.layouts.app')
 
 @section('content')
-    <!--
-    ======================================
-        Hero Section
-    ======================================
-    -->
     <section class="hero-wrapper">
-        <div class="single-hero-slide">
+        <div class="single-hero-slide" style="min-height: 600px">
             <div class="hero-shape-wrap">
                 <img src="assets/img/shape/9.png" class="shape shape1" alt="">
                 <img src="assets/img/shape/10.png" class="shape shape2" alt="">
@@ -50,7 +45,7 @@
                             <div class="domain-search-box mt-40">
                                 <div class="search-box-inner">
                                     <form action="{{route('search.result')}}">
-                                        <input name="domain" type="text" placeholder="@lang('app.find-domain')">
+                                        <input value="{{$domain}}" name="domain" type="text" placeholder="@lang('app.find-domain')">
                                         <span></span>
                                         <button type="submit">@lang('app.search')</button>
                                     </form>
@@ -63,26 +58,42 @@
         </div> <!-- /.single-hero-slide -->
     </section>
 
-    <!--
-    ======================================
-        Featured Domain Offer Section
-    ======================================
-    -->
-    <section class="featured-domain-offer" id="feature">
+    <section class="testimonail-wrap section-padding" id="testimonial" style="padding-top: 50px">
+        <div class="testimonial-bg" data-background="assets/img/bgshape.svg">
+        </div> <!-- /.testimonial-bg -->
+
         <div class="container">
             <div class="row">
-                @foreach ($domains as $key => $domain)
-                    <div class="col-xl-2 col-lg-4 col-sm-6 col-12">
-                        <div class="single-domain-name text-center">
-                            <h3>.{{$domain->tld}}</h3>
-                            <span>${{number_format($domain->price_mx, 2)}}</span>
-                            <div class="domain-icon">
-                                <img src="{{'assets/img/domain' . $key + 1 . '.png'}}" alt="">
-                            </div>
-                        </div>
-                    </div>
-                @endforeach
+                <div class="col-lg-8 col-md-10 col-12 offset-lg-2 offset-md-1">
+                    <div class="section-title text-center text-white">
+                        <span></span>
+                        <h2>Los mejores precios del mercado</h2>
+                        <p>¿Estas buscando ser revendedor de dominios, unete a nuestro programa de resellers?</p>
+                    </div> <!-- /.section-title -->
+                </div>
+            </div> <!-- /.row -->
+
+            <div class="row">
+                <div class="col-lg-12 col-12">
+                    <table>
+                        <tr>
+                            <td>Dominio</td>
+                            <td>Disponibilidad</td>
+                            <td>Periodo</td>
+                            <td>Costo</td>
+                        </tr>
+                        @foreach ($result as $key => $domain)
+                            <tr>
+                                <td>{{$domain["DomainName"].".".$domain["TLD"]}}</td>
+                                <td>{{$domain["Status"]}}</td>
+                                <td>{{$domain["Period"]}}</td>
+                                <td>{{$domain["Price"]}}</td>
+                            </tr>
+                        @endforeach
+                    </table>
+                </div>
             </div>
+
         </div>
     </section>
 @endsection
