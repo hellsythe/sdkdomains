@@ -81,16 +81,27 @@
                             <td>Disponibilidad</td>
                             <td>Periodo</td>
                             <td>Costo</td>
+                            <td></td>
                         </tr>
                         @foreach ($result as $key => $domain)
                             <tr>
-                                <td>{{$domain["DomainName"].".".$domain["TLD"]}}</td>
-                                <td>{{$domain["Status"]}}</td>
-                                <td>{{$domain["Period"]}}</td>
-                                <td>{{$domain["Price"]}}</td>
+                                <td>{{$domain["domain"]}}</td>
+                                <td>{{$domain["status"]}}</td>
+                                <td>{{$domain["period"]}}</td>
+                                <td>${{number_format($domain["price"], 2)}}</td>
+                                <td>
+                                    <form class="" action="index.html" method="post">
+                                        <button type="submit" name="button">Agregar al carrito</button>
+                                        <button type="submit" name="button">Comprar</button>
+                                    </form>
+                                </td>
                             </tr>
                         @endforeach
                     </table>
+
+                    <form class="" action="index.html" method="post">
+                        <button type="button" name="button">Proceder al pago</button>
+                    </form>
                 </div>
             </div>
 

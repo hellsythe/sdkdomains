@@ -8,6 +8,8 @@ return [
     'domain' => [
         'singular' => 'domain',
         'plural' => 'domain',
+        'available' => 'Disponible',
+        'notavailable' => 'No Disponible',
     ],
     'domain-price' => [
         'singular' => 'Costo de domino',
