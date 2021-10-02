@@ -9,17 +9,17 @@
     <section class="hero-wrapper">
         <div class="single-hero-slide">
             <div class="hero-shape-wrap">
-                <img src="assets/img/shape/9.png" class="shape shape1" alt="">
-                <img src="assets/img/shape/10.png" class="shape shape2" alt="">
-                <img src="assets/img/shape/11.png" class="shape shape3" alt="">
-                <img src="assets/img/shape/12.png" class="shape shape4" alt="">
-                <img src="assets/img/shape/13.png" class="shape shape5" alt="">
-                <img src="assets/img/shape/14.png" class="shape shape6" alt="">
-                <img src="assets/img/shape/15.png" class="shape shape7" alt="">
-                <img src="assets/img/shape/16.png" class="shape shape8" alt="">
-                <img src="assets/img/shape/17.png" class="shape shape9" alt="">
-                <img src="assets/img/shape/17.png" class="shape shape10" alt="">
-                <img src="assets/img/shape/17.png" class="shape shape11" alt="">
+                <img src="images/shape/1.png" height="60" class="shape shape1" alt="">
+                <img src="images/shape/2.png" height="60" class="shape shape2" alt="">
+                <img src="images/shape/2.png" height="60" class="shape shape3" alt="">
+                <img src="images/shape/1.png" height="60" class="shape shape4" alt="">
+                <img src="images/shape/2.png" height="60" class="shape shape5" alt="">
+                <img src="images/shape/1.png" height="60" class="shape shape6" alt="">
+                <img src="images/shape/2.png" height="60" class="shape shape7" alt="">
+                <img src="images/shape/2.png" height="60" class="shape shape8" alt="">
+                <img src="images/shape/1.png" height="60" class="shape shape9" alt="">
+                <img src="images/shape/2.png" height="60" class="shape shape10" alt="">
+                <img src="images/shape/2.png" height="60" class="shape shape11" alt="">
             </div>
 
             <div class="slide-bg">

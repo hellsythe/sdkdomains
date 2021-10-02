@@ -71,26 +71,24 @@
                     <div class="col-xl-7 col-lg-7 offset-xl-1 col-md-7 col-7 pr-0 d-none d-lg-block text-lg-right">
                         <nav id="responsive-menu" class="menu-1">
                             <ul class="menu-items">
-                                <li><a href="#">home</a>
+                                <li><a href="{{url('home')}}">@lang('app.home')</a></li>
+                                <li><a href="#price">@lang('app.reseller.plural')</a></li>
+                                <li><a href="#faq">@lang('app.faq')</a></li>
+                                <li><a href="#contact">@lang('app.contact')</a></li>
+                                <li><a href="#">@lang('app.shopping-cart')</a>
                                     <ul class="submenu">
                                         <li><a href="index.html">Home 1</a></li>
                                         <li><a href="index-2.html">Home 2</a></li>
                                         <li><a href="index-3.html">Home 3</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#feature">Features</a></li>
-                                <li><a href="#price">Pricing</a></li>
-                                <li><a href="#service">Services</a></li>
-                                <li><a href="#faq">FAQ</a></li>
-                                <li><a href="#testimonial">Testimonial</a></li>
-                                <li><a href="#contact">Contact</a></li>
                             </ul>
                         </nav><!-- /.nav -->
                     </div> <!-- /.col-lg-5 col-md-6 -->
 
                     <div class="col-xl-2 col-lg-3 col-5 col-md-8 d-none d-sm-block text-right">
                         <div class="account">
-                            <a href="#" class="theme-btn sign">Sing up <img src="assets/img/sign.png" alt=""></a>
+                            <a href="{{url('login')}}" class="theme-btn sign">@lang('auth.register') <img src="assets/img/sign.png" alt=""></a>
                         </div>
                     </div>
                     <div class="col-12 d-block d-lg-none">
@@ -115,14 +113,13 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-12">
                         <div class="site-info-widget single-footer-wid">
                             <div class="footer-logo">
-                                <a href="index.html"><img src="assets/img/logo.png" alt="klaud"></a>
-                                <p>We make registering, hosting, and managing domains for yourself or others easy and affordable, because the internet needs people.</p>
+                                <a href="{{url('home')}}"><img src="assets/img/logo.png" alt="klaud"></a>
+                                <p>@lang('app.footer_we')</p>
                             </div>
 
                             <div class="social-pages">
                                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                                 <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-dribbble"></i></a>
                                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
                             </div>
                         </div>
@@ -131,15 +128,14 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-12">
                         <div class="single-footer-wid">
                             <div class="foo-wid-title">
-                                <h3>Hosting</h3>
+                                <h3>@lang('app.reseller.plural')</h3>
                             </div>
                             <ul>
-                                <li><a href="#">Shared Hosting</a></li>
-                                <li><a href="#">WordPress Hosting</a></li>
-                                <li><a href="#">Reseller Hosting</a></li>
-                                <li><a href="#">VPS Hosting</a></li>
-                                <li><a href="#">Dedicated Servers</a></li>
-                                <li><a href="#">Private Email Hosting</a></li>
+                                <li><a href="#">@lang('app.reseller.api')</a></li>
+                                <li><a href="#">@lang('app.reseller.doc')</a></li>
+                                <li><a href="#">@lang('app.reseller.examples')</a></li>
+                                <li><a href="#">@lang('app.reseller.my_account')</a></li>
+                                <li><a href="#">@lang('app.reseller.register')</a></li>
                             </ul>
                         </div>
                     </div> <!-- /.col-lg-3 col-md-6 col-sm-6 col-12 -->
@@ -147,15 +143,15 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-12">
                         <div class="single-footer-wid">
                             <div class="foo-wid-title">
-                                <h3>Domains</h3>
+                                <h3>@lang('app.domain.plural')</h3>
                             </div>
                             <ul>
-                                <li><a href="#">Domain Name Search</a></li>
-                                <li><a href="#">Transfer</a></li>
-                                <li><a href="#">Personal Domain</a></li>
-                                <li><a href="#">Whois Lookup</a></li>
-                                <li><a href="#">PremiumDNS</a></li>
-                                <li><a href="#">FreeDNS</a></li>
+                                <li><a href="#">@lang('app.domain.search')</a></li>
+                                <li><a href="#">@lang('app.domain.renew')</a></li>
+                                <li><a href="#">@lang('app.domain.transfer')</a></li>
+                                <li><a href="#">@lang('app.domain.my_domains')</a></li>
+                                <li><a href="#">@lang('app.domain.freedns')</a></li>
+                                <li><a href="#">@lang('app.domain.whois')</a></li>
                             </ul>
                         </div>
                     </div> <!-- /.col-lg-3 col-md-6 col-sm-6 col-12 -->
@@ -163,15 +159,15 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-12">
                         <div class="single-footer-wid">
                             <div class="foo-wid-title">
-                                <h3>Support</h3>
+                                <h3>@lang('app.support.singular')</h3>
                             </div>
                             <ul>
-                                <li><a href="#">Support Center</a></li>
-                                <li><a href="#">Status Updates</a></li>
-                                <li><a href="#">Knowledgebase</a></li>
-                                <li><a href="#">Submit Ticket</a></li>
-                                <li><a href="#">Live Chat</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">@lang('app.support.support_center')</a></li>
+                                <li><a href="#">@lang('app.support.status_updates')</a></li>
+                                <li><a href="#">@lang('app.support.knowledgebase')</a></li>
+                                <li><a href="#">@lang('app.support.submit_ticket')</a></li>
+                                <li><a href="#">@lang('app.support.live_chat')</a></li>
+                                <li><a href="#">@lang('app.support.privacy_policy')</a></li>
                             </ul>
                         </div>
                     </div> <!-- /.col-lg-3 col-md-6 col-sm-6 col-12 -->
@@ -191,12 +187,7 @@
                     <div class="col-md-6 col-12 text-md-right">
                         <div class="payment-support">
                             <ul>
-                                <li><i class="fab fa-cc-paypal"></i></li>
-                                <li><i class="fab fa-cc-stripe"></i></li>
                                 <li><i class="fab fa-cc-mastercard"></i></li>
-                                <li><i class="fab fa-cc-jcb"></i></li>
-                                <li><i class="fab fa-cc-amazon-pay"></i></li>
-                                <li><i class="fab fa-cc-amex"></i></li>
                                 <li><i class="fas fa-credit-card-front"></i></li>
                                 <li><i class="fab fa-cc-visa"></i></li>
                             </ul>
