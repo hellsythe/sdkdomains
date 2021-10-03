@@ -38,6 +38,9 @@ return [
         'doc' => 'Documentación',
         'my_account' => 'Mi cuenta',
         'register' => 'Registrarse como reseller',
+        'join_us' => '¿Estas buscando ser revendedor de dominios, únete a nuestro programa de resellers?',
     ],
-    'footer_we' => 'Hacemos que registrar, alojar y administrar dominios para usted sea fácil y asequible, contamos con API para resellers.'
+    'footer_we' => 'Hacemos que registrar, alojar y administrar dominios para usted sea fácil y asequible, contamos con API para resellers.',
+    'best_prices' => 'Los mejores precios del mercado',
+    'join_us' => 'Únete a nosotros',
 ];
