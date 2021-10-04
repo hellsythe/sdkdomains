@@ -17,24 +17,27 @@
 
     // Domain Placehoder
     var placehoder = document.querySelector('.search-box-inner input');
-    var pText = placehoder.placeholder;
+    if (placehoder) {
 
-    const sp = superplaceholder({
-        el: placehoder,
-        sentences: [pText],
-        options: {
-        loop: true
-      }
-    });
-    
-    sp.start();
+        var pText = placehoder.placeholder;
 
-    
+        const sp = superplaceholder({
+            el: placehoder,
+            sentences: [pText],
+            options: {
+                loop: true
+            }
+        });
+
+        sp.start();
+    }
+
+
     AOS.init();
 
     $('.package-control li').on('click', function(){
-      $(".package-control li").removeClass('active');      
-      $(this).addClass('active');      
+      $(".package-control li").removeClass('active');
+      $(this).addClass('active');
     });
 
 
@@ -45,12 +48,12 @@
 
 
     // $('.domain-list').select2();
-  
+
 
 
     /*========================================
      # Hero SLide Carousel  - Home Page 3
-     ========================================*/ 
+     ========================================*/
 
       $('.hero-slider-active').slick({
         slidesToShow: 1,
@@ -58,13 +61,13 @@
         slidesToScroll: 1,
         arrows: false,
         autoplay: true,
-        autoplaySpeed: 5000,        
+        autoplaySpeed: 5000,
       });
-    
+
 
     /*========================================
-     # Testomminal Carousel 
-     ========================================*/  
+     # Testomminal Carousel
+     ========================================*/
 
     $('.testimonial-list').slick({
         slidesToShow: 3,
@@ -99,10 +102,10 @@
               slidesToScroll: 1
             }
           }
-          
+
         ]
 
-    });    
+    });
 
     /* =============================================
         # Magnific popup init
@@ -130,7 +133,7 @@
     });
 
     /*==================================
-     # Meanmenu Active - Mobile Menu 
+     # Meanmenu Active - Mobile Menu
      ==================================*/
     $('#responsive-menu').meanmenu({
         meanMenuContainer: '.responsive-menu',
@@ -182,9 +185,9 @@
             $("header").removeClass("sticky");
         }
     });
-      
 
-     // CouterUp 
+
+     // CouterUp
     $('.price span').each(function () {
        var size = $(this).text().split(".")[1] ? $(this).text().split(".")[1].length : 0;
        $(this).prop('Counter', 0).animate({
@@ -205,26 +208,26 @@
     $('select').each(function(){
       var $this = $(this), numberOfOptions = $(this).children('option').length;
       var overflow = numberOfOptions > 5 ? 'overflow-y' : '';
-      $this.addClass('select-hidden'); 
+      $this.addClass('select-hidden');
       $this.wrap('<div class="select"></div>');
       $this.after('<div class="select-styled"></div>');
 
       var $styledSelect = $this.next('div.select-styled');
       $styledSelect.text($this.children('option').eq(0).text());
-    
+
       var $list = $('<ul />', {
           'class': 'select-options'
       }).insertAfter($styledSelect);
-    
+
       for (var i = 0; i < numberOfOptions; i++) {
           $('<li />', {
               text: $this.children('option').eq(i).text(),
               rel: $this.children('option').eq(i).val()
           }).appendTo($list);
       }
-    
+
       var $listItems = $list.children('li');
-    
+
       $styledSelect.click(function(e) {
           e.stopPropagation();
           $('div.select-styled.active').not(this).each(function(){
@@ -232,7 +235,7 @@
           });
           $(this).toggleClass('active').next('ul.select-options').addClass(overflow).toggle();
       });
-    
+
       $listItems.click(function(e) {
           e.stopPropagation();
           $styledSelect.text($(this).text()).removeClass('active');
@@ -245,7 +248,7 @@
       }
           $list.hide();
       });
-    
+
       $(document).click(function() {
           $styledSelect.removeClass('active');
           $list.hide();
@@ -261,4 +264,3 @@
 
     }); // end document ready function
 })(jQuery); // End jQuery
-

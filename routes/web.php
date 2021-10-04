@@ -16,6 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::namespace('\App\Http\Controllers')->group(function () {
     Route::get('/', 'HomeController@index')->name('home');
     Route::get('search', 'HomeController@searchResult')->name('search.result');
+    Route::get('/resellers', 'HomeController@resellers')->name('resellers');
+    Route::get('/faq', 'HomeController@faq')->name('faq');
+    Route::get('/contact', 'HomeController@contact')->name('contact');
+    Route::get('/cart', 'HomeController@cart')->name('cart');
 });
 
 Route::namespace('\App\Http\Controllers\Admin')

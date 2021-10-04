@@ -1736,7 +1736,7 @@ header {
     width: 100%;
     position: fixed !important;
     padding: 15px 0px;
-    background: #000b7f;
+    background: #111C4E;
     -webkit-animation: sticky .8s ease-in-out;
     animation: sticky .8s ease-in-out;
     -webkit-transform: translateY(0);
@@ -3604,9 +3604,9 @@ header {
 	Contact Us Section Styles
  ------------------------------------ */
 .contact-us-wrap {
-  background-image: -moz-linear-gradient(-45deg, #2f1976 0%, #5e218f 100%);
-  background-image: -webkit-linear-gradient(-45deg, #2f1976 0%, #5e218f 100%);
-  background-image: -ms-linear-gradient(-45deg, #2f1976 0%, #5e218f 100%); }
+  background-image: -moz-linear-gradient(-45deg, #111C4E 0%, #5e218f 100%);
+  background-image: -webkit-linear-gradient(-45deg, #111C4E 0%, #5e218f 100%);
+  background-image: -ms-linear-gradient(-45deg, #111C4E 0%, #5e218f 100%); }
   @media (max-width: 767px) {
     .contact-us-wrap.pt-350 {
       padding-top: 280px; } }
@@ -3817,7 +3817,7 @@ form .f3 {
 footer {
   color: #FFF;
   padding: 100px 0px;
-  background: #2f1976; }
+  background: #111C4E; }
   @media (max-width: 991px) {
     footer {
       padding: 80px 0px; }

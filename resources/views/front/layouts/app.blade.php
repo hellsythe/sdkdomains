@@ -63,7 +63,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-3 col-lg-2 d-flex col-5">
-                        <a class="navbar-brand logo" href="index.html">
+                        <a class="navbar-brand logo" href="{{route('home')}}">
                             <img src="assets/img/logo.png" alt="Klaud">
                         </a>
                     </div>
@@ -71,16 +71,16 @@
                     <div class="col-xl-7 col-lg-7 offset-xl-1 col-md-7 col-7 pr-0 d-none d-lg-block text-lg-right">
                         <nav id="responsive-menu" class="menu-1">
                             <ul class="menu-items">
-                                <li><a href="{{url('home')}}">@lang('app.home')</a></li>
-                                <li><a href="#price">@lang('app.reseller.plural')</a></li>
-                                <li><a href="#faq">@lang('app.faq')</a></li>
-                                <li><a href="#contact">@lang('app.contact')</a></li>
-                                <li><a href="#">@lang('app.shopping-cart')</a>
-                                    <ul class="submenu">
+                                <li><a href="{{route('home')}}">@lang('app.home')</a></li>
+                                <li><a href="{{route('resellers')}}">@lang('app.reseller.plural')</a></li>
+                                <li><a href="{{route('faq')}}">@lang('app.faq')</a></li>
+                                <li><a href="{{route('contact')}}">@lang('app.contact')</a></li>
+                                <li><a href="{{route('cart')}}">@lang('app.shopping-cart')</a>
+                                    {{-- <ul class="submenu">
                                         <li><a href="index.html">Home 1</a></li>
                                         <li><a href="index-2.html">Home 2</a></li>
                                         <li><a href="index-3.html">Home 3</a></li>
-                                    </ul>
+                                    </ul> --}}
                                 </li>
                             </ul>
                         </nav><!-- /.nav -->
@@ -131,11 +131,11 @@
                                 <h3>@lang('app.reseller.plural')</h3>
                             </div>
                             <ul>
-                                <li><a href="#">@lang('app.reseller.api')</a></li>
-                                <li><a href="#">@lang('app.reseller.doc')</a></li>
-                                <li><a href="#">@lang('app.reseller.examples')</a></li>
-                                <li><a href="#">@lang('app.reseller.my_account')</a></li>
-                                <li><a href="#">@lang('app.reseller.register')</a></li>
+                                <li><a href="{{route('home')}}">@lang('app.reseller.api')</a></li>
+                                <li><a href="{{route('home')}}">@lang('app.reseller.doc')</a></li>
+                                <li><a href="{{route('home')}}">@lang('app.reseller.examples')</a></li>
+                                <li><a href="{{route('home')}}">@lang('app.reseller.my_account')</a></li>
+                                <li><a href="{{route('home')}}">@lang('app.reseller.register')</a></li>
                             </ul>
                         </div>
                     </div> <!-- /.col-lg-3 col-md-6 col-sm-6 col-12 -->
@@ -146,12 +146,12 @@
                                 <h3>@lang('app.domain.plural')</h3>
                             </div>
                             <ul>
-                                <li><a href="#">@lang('app.domain.search')</a></li>
-                                <li><a href="#">@lang('app.domain.renew')</a></li>
-                                <li><a href="#">@lang('app.domain.transfer')</a></li>
-                                <li><a href="#">@lang('app.domain.my_domains')</a></li>
-                                <li><a href="#">@lang('app.domain.freedns')</a></li>
-                                <li><a href="#">@lang('app.domain.whois')</a></li>
+                                <li><a href="{{route('home')}}">@lang('app.domain.search')</a></li>
+                                <li><a href="{{route('home')}}">@lang('app.domain.renew')</a></li>
+                                <li><a href="{{route('home')}}">@lang('app.domain.transfer')</a></li>
+                                <li><a href="{{route('home')}}">@lang('app.domain.my_domains')</a></li>
+                                <li><a href="{{route('home')}}">@lang('app.domain.freedns')</a></li>
+                                <li><a href="{{route('home')}}">@lang('app.domain.whois')</a></li>
                             </ul>
                         </div>
                     </div> <!-- /.col-lg-3 col-md-6 col-sm-6 col-12 -->
@@ -162,12 +162,12 @@
                                 <h3>@lang('app.support.singular')</h3>
                             </div>
                             <ul>
-                                <li><a href="#">@lang('app.support.support_center')</a></li>
-                                <li><a href="#">@lang('app.support.status_updates')</a></li>
-                                <li><a href="#">@lang('app.support.knowledgebase')</a></li>
-                                <li><a href="#">@lang('app.support.submit_ticket')</a></li>
-                                <li><a href="#">@lang('app.support.live_chat')</a></li>
-                                <li><a href="#">@lang('app.support.privacy_policy')</a></li>
+                                <li><a href="{{route('home')}}">@lang('app.support.support_center')</a></li>
+                                <li><a href="{{route('home')}}">@lang('app.support.status_updates')</a></li>
+                                <li><a href="{{route('home')}}">@lang('app.support.knowledgebase')</a></li>
+                                <li><a href="{{route('home')}}">@lang('app.support.submit_ticket')</a></li>
+                                <li><a href="{{route('home')}}">@lang('app.support.live_chat')</a></li>
+                                <li><a href="{{route('home')}}">@lang('app.support.privacy_policy')</a></li>
                             </ul>
                         </div>
                     </div> <!-- /.col-lg-3 col-md-6 col-sm-6 col-12 -->
@@ -181,7 +181,7 @@
                 <div class="row align-items-end">
                     <div class="col-md-6 col-12">
                         <div class="copyright-info">
-                            <span>Copyright &copy; 2021. All Rights Reserved To SDK Consultoría.</span>
+                            <span>Copyright &copy; 2021. All Rights Reserved</span>
                         </div>
                     </div>
                     <div class="col-md-6 col-12 text-md-right">

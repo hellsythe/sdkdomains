@@ -1866,7 +1866,7 @@ header {
   width: 100%;
   position: fixed;
   padding: 15px 0px;
-  background: #000b7f;
+  background: #111C4E;
   -webkit-animation: sticky .8s ease-in-out;
   animation: sticky .8s ease-in-out;
   -webkit-box-shadow: 0 13px 35px -12px rgba(35, 35, 35, 0.15);
@@ -1937,9 +1937,9 @@ header {
     display: flex;
     position: relative;
     z-index: 1;
-    background-image: -moz-linear-gradient(120deg, #189bfb 0%, #000b7f 100%);
-    background-image: -webkit-linear-gradient(120deg, #189bfb 0%, #000b7f 100%);
-    background-image: -ms-linear-gradient(120deg, #189bfb 0%, #000b7f 100%); }
+    background-image: -moz-linear-gradient(120deg, #189bfb 0%, #111C4E 100%);
+    background-image: -webkit-linear-gradient(120deg, #189bfb 0%, #111C4E 100%);
+    background-image: -ms-linear-gradient(120deg, #189bfb 0%, #111C4E 100%); }
     @media (max-width: 991px) {
       .hero-one .single-hero-slide {
         min-height: 700px; } }
@@ -2146,9 +2146,9 @@ header {
     padding-top: 274px;
     padding-bottom: 380px;
     min-height: 1020px;
-    background-image: -moz-linear-gradient(165deg, #189bfb 0%, #000b7f 100%);
-    background-image: -webkit-linear-gradient(165deg, #189bfb 0%, #000b7f 100%);
-    background-image: -ms-linear-gradient(165deg, #189bfb 0%, #000b7f 100%); }
+    background-image: -moz-linear-gradient(165deg, #189bfb 0%, #111C4E 100%);
+    background-image: -webkit-linear-gradient(165deg, #189bfb 0%, #111C4E 100%);
+    background-image: -ms-linear-gradient(165deg, #189bfb 0%, #111C4E 100%); }
     @media (max-width: 1200px) {
       .hero-slider-three .single-hero-slide {
         padding-top: 200px; } }
@@ -3337,9 +3337,9 @@ header {
 
 .call-to-action-wrap {
   padding-bottom: 210px;
-  background-image: -moz-linear-gradient(165deg, #189bfb 0%, #000b7f 100%);
-  background-image: -webkit-linear-gradient(165deg, #189bfb 0%, #000b7f 100%);
-  background-image: -ms-linear-gradient(165deg, #189bfb 0%, #000b7f 100%); }
+  background-image: -moz-linear-gradient(165deg, #189bfb 0%, #111C4E 100%);
+  background-image: -webkit-linear-gradient(165deg, #189bfb 0%, #111C4E 100%);
+  background-image: -ms-linear-gradient(165deg, #189bfb 0%, #111C4E 100%); }
   .call-to-action-wrap .cta-banner {
     padding: 80px 0px;
     background: #FFF;
@@ -3511,9 +3511,9 @@ header {
         transform: scale(1.5); }
 
 .faq-wrap-contact-us {
-  background-image: -moz-linear-gradient(150deg, #189bfb 0%, #000b7f 100%);
-  background-image: -webkit-linear-gradient(150deg, #189bfb 0%, #000b7f 100%);
-  background-image: -ms-linear-gradient(150deg, #189bfb 0%, #000b7f 100%);
+  background-image: -moz-linear-gradient(150deg, #189bfb 0%, #111C4E 100%);
+  background-image: -webkit-linear-gradient(150deg, #189bfb 0%, #111C4E 100%);
+  background-image: -ms-linear-gradient(150deg, #189bfb 0%, #111C4E 100%);
   overflow: hidden; }
   .faq-wrap-contact-us::before {
     background: #FFF;
