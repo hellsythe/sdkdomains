@@ -10,6 +10,8 @@ services:
       - ~/.composer-docker/cache:/root/.composer/cache:delegated
       - /etc/localtime:/etc/localtime:ro
       - ./:/app
+      - ./../../sdk/base:/base
+      - ./../../hellsythe/domain-api:/domain-api
     ports:
       - '${APP_PORT:-80}:80'
     secrets:

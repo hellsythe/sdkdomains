@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "26273241f94d67525135d4f333fd16cb",
+    "content-hash": "6ce34804c56b9e1e0f79180a3180877a",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -979,17 +979,11 @@
         },
         {
             "name": "hellsythe/domainnameapi",
-            "version": "0.1.2",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:hellsythe/domainnameapi.git",
-                "reference": "62172cca97a03a676abc9ee14141644b752edbf6"
-            },
+            "version": "0.1.1",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/hellsythe/domainnameapi/zipball/62172cca97a03a676abc9ee14141644b752edbf6",
-                "reference": "62172cca97a03a676abc9ee14141644b752edbf6",
-                "shasum": ""
+                "type": "path",
+                "url": "/domain-api",
+                "reference": "01a1d1022e3a6d081c2c14393171a6f57f278f8a"
             },
             "require": {
                 "laravel/framework": "^8.40",
@@ -1012,7 +1006,6 @@
                     "Hellsythe\\DomainNameApi\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1030,7 +1023,9 @@
                 "domainnameapi",
                 "laravel"
             ],
-            "time": "2021-10-02T01:08:01+00:00"
+            "transport-options": {
+                "relative": false
+            }
         },
         {
             "name": "hybridauth/hybridauth",
@@ -2343,6 +2338,57 @@
             "time": "2021-09-20T12:20:58+00:00"
         },
         {
+            "name": "openpay/sdk",
+            "version": "2.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/open-pay/openpay-php.git",
+                "reference": "f0e0e98ce751cdd1b689bc042a15dd3203d15a00"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/open-pay/openpay-php/zipball/f0e0e98ce751cdd1b689bc042a15dd3203d15a00",
+                "reference": "f0e0e98ce751cdd1b689bc042a15dd3203d15a00",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-hash": "*",
+                "php": ">=5.2.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.8.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Openpay\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Openpay",
+                    "email": "soporte@openpay.mx",
+                    "homepage": "https://www.openpay.mx/"
+                },
+                {
+                    "name": "Federico Balderas",
+                    "email": "plugins@openpay.mx",
+                    "homepage": "https://openpay.mx/"
+                }
+            ],
+            "description": "This is a client implementing the payment services for Openpay at openpay.mx",
+            "support": {
+                "issues": "https://github.com/open-pay/openpay-php/issues",
+                "source": "https://github.com/open-pay/openpay-php/tree/2.2.1"
+            },
+            "time": "2021-09-30T18:58:55+00:00"
+        },
+        {
             "name": "opis/closure",
             "version": "3.6.2",
             "source": {
@@ -3252,17 +3298,11 @@
         },
         {
             "name": "sdkconsultoria/base",
-            "version": "dev-develop",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sdkconsultoria/base.git",
-                "reference": "c789ba4e34a8f621cddf0c28f33a8f6d862299a7"
-            },
+            "version": "dev-master",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sdkconsultoria/base/zipball/c789ba4e34a8f621cddf0c28f33a8f6d862299a7",
-                "reference": "c789ba4e34a8f621cddf0c28f33a8f6d862299a7",
-                "shasum": ""
+                "type": "path",
+                "url": "/base",
+                "reference": "b51e4cce34837d6b11c6023307efa38421da3743"
             },
             "require": {
                 "hybridauth/hybridauth": "^3.7",
@@ -3271,7 +3311,6 @@
                 "php": "^7.4|^8.0",
                 "spatie/laravel-permission": "^5.1"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -3290,7 +3329,6 @@
                     "Sdkconsultoria\\Base\\Tests\\": "tests/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3308,11 +3346,9 @@
                 "laravel",
                 "package"
             ],
-            "support": {
-                "issues": "https://github.com/sdkconsultoria/base/issues",
-                "source": "https://github.com/sdkconsultoria/base/tree/develop"
-            },
-            "time": "2021-10-01T21:44:50+00:00"
+            "transport-options": {
+                "relative": false
+            }
         },
         {
             "name": "spatie/laravel-permission",
@@ -8495,14 +8531,12 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "sdkconsultoria/base": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": "^7.3|^8.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }
