@@ -51,8 +51,10 @@
                                     <td>{{$domain["period"]}}</td>
                                     <td>${{number_format($domain["price"], 2)}}</td>
                                     <td>
-                                        <form class="" action="index.html" method="post">
-                                            <button type="submit" name="button">@lang('base::models.shopping-cart.add')</button>
+                                        <form class="" action="{{route('pay')}}" method="post">
+                                            @csrf
+                                            <input type="hidden" name="domain" value="{{$domain["domain"]}}">
+                                            <button value="" type="button" name="button">@lang('base::models.shopping-cart.add')</button>
                                             <button type="submit" name="button">@lang('base::models.sale.buy')</button>
                                         </form>
                                     </td>

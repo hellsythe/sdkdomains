@@ -20,6 +20,8 @@ Route::namespace('\App\Http\Controllers')->group(function () {
     Route::get('/faq', 'HomeController@faq')->name('faq');
     Route::get('/contact', 'HomeController@contact')->name('contact');
     Route::get('/cart', 'HomeController@cart')->name('cart');
+    Route::post('/pay', 'ShopController@pay')->name('pay');
+    Route::post('/process-pay', 'ShopController@processPay')->name('process-pay');
 });
 
 Route::namespace('\App\Http\Controllers\Admin')

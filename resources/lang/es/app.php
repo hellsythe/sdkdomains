@@ -5,7 +5,10 @@ return [
     'home' => 'Principal',
     'resellers' => 'Resellers',
     'services' => 'Servicios',
-    'faq' => 'FAQ',
+    'faq' => [
+        'singular' => 'FAQ',
+        'faqs' => 'Preguntas frecuentes'
+    ],
     'testimonial' => 'Testimonios',
     'contact' => 'Contacto',
     'sign-up' => 'Registrarse',

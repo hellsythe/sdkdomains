@@ -41,6 +41,8 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- template main style css file -->
     <link rel="stylesheet" href="style.css">
+
+    @yield('custom_loads_start')
 </head>
 <body>
     <!-- Preloader -->
@@ -73,7 +75,7 @@
                             <ul class="menu-items">
                                 <li><a href="{{route('home')}}">@lang('app.home')</a></li>
                                 <li><a href="{{route('resellers')}}">@lang('app.reseller.plural')</a></li>
-                                <li><a href="{{route('faq')}}">@lang('app.faq')</a></li>
+                                <li><a href="{{route('faq')}}">@lang('app.faq.singular')</a></li>
                                 <li><a href="{{route('contact')}}">@lang('app.contact')</a></li>
                                 <li><a href="{{route('cart')}}">@lang('app.shopping-cart')</a>
                                     {{-- <ul class="submenu">
@@ -224,5 +226,6 @@
     <script src="assets/js/superplaceholder.js"></script>
     <script src="assets/js/ajax-mail.js"></script>
     <script src="assets/js/active.js"></script>
+    @yield('custom_scripts')
 </body>
 </html>
